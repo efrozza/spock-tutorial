@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="GeradorDeHashSpec" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-08T20:56:21" hostname="EFROZZA" time="0.866">
+  <properties/>
+  <testcase name="Deve gerar excecao" classname="GeradorDeHashSpec" time="0.866"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

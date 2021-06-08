@@ -4,12 +4,12 @@ import java.security.NoSuchAlgorithmException;
 
 public class GeradorDeHash {
 
-    public byte[] gerarHash (int cdAgenciaBancaria, int cdContaBancariaCliente, CarteiraRecomendada carteira) throws NoSuchAlgorithmException {
+    public byte[] gerarHash (int cdAgenciaBancaria, int cdContaBancariaCliente, CarteiraRecomendada carteira, String algoritmo) throws NoSuchAlgorithmException {
 
         String totalDebyes;
         totalDebyes = carteira.toString() + cdAgenciaBancaria + cdAgenciaBancaria;
 
-        MessageDigest algorithm = MessageDigest.getInstance("MD5");
+        MessageDigest algorithm = MessageDigest.getInstance(algoritmo);
         byte messageDigest[] = algorithm.digest(totalDebyes.getBytes(StandardCharsets.UTF_8));
 
         return messageDigest;

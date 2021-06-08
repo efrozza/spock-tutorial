@@ -1,6 +1,7 @@
 import spock.lang.Specification
 
 import java.nio.charset.StandardCharsets
+import java.security.NoSuchAlgorithmException
 
 class GeradorDeHashSpec extends Specification {
 
@@ -28,10 +29,25 @@ class GeradorDeHashSpec extends Specification {
         def carteira = carteiraRecomendada
 
         when: "quando executar a geracao do hash"
-        def hashGerado = geradorDeHash.gerarHash(agencia, conta, carteira)
+        def hashGerado = geradorDeHash.gerarHash(agencia, conta, carteira, "MD5")
 
         then: "codigo hash gerado"
         hashGerado.length > 0
+    }
+
+    def "Deve gerar excecao NoSuchAlgorithmException"(){
+
+        given: "dado agencia conta carteira e um algoritmo invalido"
+        def agencia = 1
+        def conta = 2
+        def carteira = carteiraRecomendada
+        def algoritmo = "AAA"
+
+        when: "quando executar a geracao do hash"
+        geradorDeHash.gerarHash(agencia, conta, carteira, algoritmo)
+
+        then: "gera excecao"
+        thrown(NoSuchAlgorithmException.class)
     }
 
 }

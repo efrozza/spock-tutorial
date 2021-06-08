@@ -24,9 +24,9 @@ VerificadorHash.java
  VerificadorHash
 CarteiraRecomendada.java
  CarteiraRecomendada
-GeradorDeHash.java
- GeradorDeHash
-ResumoInvestimentoCliente.java
- ResumoInvestimentoCliente
 ComparadorDeHash.java
  ComparadorDeHash
+ResumoInvestimentoCliente.java
+ ResumoInvestimentoCliente
+GeradorDeHash.java
+ GeradorDeHash
