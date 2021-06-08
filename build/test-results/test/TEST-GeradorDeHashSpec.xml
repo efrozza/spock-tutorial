@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="GeradorDeHashSpec" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-08T19:48:20" hostname="EFROZZA" time="0.728">
+  <properties/>
+  <testcase name="Verifica se gerou hash corretamente" classname="GeradorDeHashSpec" time="0.728"/>
+  <system-out><![CDATA[[B@2d573858
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
