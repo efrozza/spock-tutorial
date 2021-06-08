@@ -1,12 +1,12 @@
+import java.util.Arrays;
+
 public class ComparadorDeHash {
-    boolean necessitaRecalculo (byte[] hashRecebido, byte[] hashAtual){
+    boolean necessitaRecalculo(byte[] hashRecebido, byte[] hashAtual) {
 
-        if (hashRecebido == hashAtual){
+        if (Arrays.equals(hashRecebido, hashAtual)) {
             return false;
-        } else{
-            return true;
         }
-
+        return true;
     }
 
 
